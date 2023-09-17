@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>奔跑的小车</h1>
+    <div class="layout-main">
+        <div class="select-area">
+            <label>
+                速度：
+                <select class="w100" id="carSpeed"></select>
+            </label>
+            <label>
+                车型：
+                <select class="w100" id="carType"></select>
+            </label>
+        </div>
+        <div id="runArea" class="run-area">
+            <img id="movingCar" class="car-right" src="./img/car1.png" alt="">
+        </div>
+    </div>
+    <dialog id="myDialog">
+        <p>快撞上啦！请返回</p>
+        <div style="text-align: center;">
+            <button id="closeDialogBtn">关闭</button>            
+        </div>
+
+    </dialog>
+    
+    <script src="index.js"></script>
+</body>
+</html>

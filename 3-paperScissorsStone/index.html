@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paper Scissors Stone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1 id="round-info">石头剪刀布</h1>
+  <div class="layout-main">
+
+    <div class="player robot">
+      <div class="gesture" id="robot-gesture">
+        <p class="pending">?</p>
+        <!-- <img src="" alt="?" -->
+      </div>
+      <p>机器人</p>
+      <div class="score" id="robot-score">
+          胜0 | 负0
+      </div>
+    </div>
+    <div class="player people">
+      <div class="gesture" id="my-gesture">
+        <p class="pending">?</p>
+      </div>
+
+      <p>kun</p>
+      <div class="score" id="my-score">
+        胜0 | 负0
+      </div>
+
+    </div>
+    
+  </div>
+  <div class="footer">
+    <div class="round-text"></div>
+    <div class="final-result"></div>
+    <button class="btn" id="start-game">开始游戏</button>
+    <button class="btn" id="restart-game">重新开始游戏</button>
+    <output></output>
+
+  </div>
+
+  <dialog id="gesture-dialog">
+    <div class="dialog-center">
+      <form>
+        <p>
+          <label>
+            <span>请选择要出的手势：</span>
+            <select>
+              <option value="stone">石头</option>
+              <option value="scissors">剪刀</option>
+              <option value="paper">布</option>
+            </select>
+          </label>
+        </p>
+        <div class="dialog-btn">
+          <!-- <button value="cancel" formmethod="dialog">Cancel</button> -->
+          <button id="confirmBtn" value="default">Confirm</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  <script src="index.js"></script>
+</body>
+</html>

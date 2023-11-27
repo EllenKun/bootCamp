@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>奔跑的火车</h1>
+    <div class="layout-main">
+        <audio id="trainAudio" loop src="./bgm.mp3"></audio>
+        <div class="select-area">
+            <label>
+                是否播放音乐：
+                <select class="w100" id="isPlay">
+                    <option value="false">否</option>
+                    <option value="true">是</option>
+                </select>
+            </label>
+            <label>
+                得分：1
+            </label>
+        </div>
+        <div id="runArea" class="run-area">
+            <div id="thirdTrain" class="train-item">
+                <div class="train-window-list">
+                    <div class="train-window"></div>
+                    <div class="train-window"></div>
+                </div>
+                <div class="train-line"></div>
+            </div>
+            <div id="secondTrain" class="train-item">
+                <div class="train-window-list">
+                    <div class="train-window"></div>
+                    <div class="train-window"></div>
+                </div>
+                <div class="train-line"></div>
+            </div>
+            <div id="firstTrain" class="train-item train-head">
+                <div class="train-window-list">
+                    <div class="train-window"></div>
+                    <div class="train-window"></div>
+                </div>
+                <div class="train-line"></div>
+            </div>
+        </div>
+    </div>
+    <dialog id="myDialog">
+        <p>撞上啦！重新开始游戏吧！</p>
+        <div style="text-align: center;">
+            <button id="closeDialogBtn">重新开始</button>            
+        </div>
+    </dialog>
+    
+    <script src="index.js"></script>
+</body>
+</html>
